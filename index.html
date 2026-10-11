@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0a1118">
+  <meta name="description" content="Aprende Linux paso a paso con LINUX 404.">
+  <title>LINUX 404 — Linux, a tu ritmo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" data-view="home" aria-label="LINUX 404, inicio">
+        <span class="brand-mark">L<span>·</span>404</span>
+        <span class="brand-copy"><b>LINUX 404</b><small>APRENDE A TU RITMO</small></span>
+      </a>
+      <div class="side-label">TU ESPACIO</div>
+      <nav class="main-nav">
+        <button class="nav-item active" data-view="home"><span class="nav-icon">⌂</span><span>Inicio</span><kbd>01</kbd></button>
+        <button class="nav-item" data-view="route"><span class="nav-icon">◈</span><span>Ruta</span><kbd>02</kbd></button>
+        <button class="nav-item" data-view="lab"><span class="nav-icon">⌘</span><span>Laboratorio</span><kbd>03</kbd></button>
+        <button class="nav-item" data-view="library"><span class="nav-icon">▤</span><span>Biblioteca</span><kbd>04</kbd></button>
+        <button class="nav-item" data-view="challenges"><span class="nav-icon">✳</span><span>Retos</span><kbd>05</kbd></button>
+        <button class="nav-item" data-view="troubleshoot"><span class="nav-icon">＋</span><span>Diagnóstico</span><kbd>06</kbd></button>
+        <button class="nav-item" data-view="platforms"><span class="nav-icon">⇄</span><span>Mint y Windows</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="side-label">TU AVANCE</div>
+        <button class="nav-item" data-view="progress"><span class="nav-icon">◷</span><span>Progreso</span></button>
+        <div class="side-progress"><div class="progress-meta"><span>Ruta Linux</span><b id="sideProgressText">0%</b></div><div class="progress-track"><i id="sideProgressBar"></i></div><small>Tu aprendizaje se guarda aquí</small></div>
+        <button class="nav-item settings-link" id="settingsBtn"><span class="nav-icon">⚙</span><span>Ajustes</span></button>
+        <div class="profile"><div class="avatar">L</div><div><b>Mi espacio</b><small id="learningProfile">Linux Mint Cinnamon</small></div><span class="profile-dot"></span></div>
+      </div>
+    </aside>
+
+    <main class="main-area" id="inicio">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Abrir menú">☰</button>
+        <div class="breadcrumb"><span>LINUX 404</span><b>/</b><strong id="currentSection">INICIO</strong></div>
+        <div class="top-actions">
+          <label class="search-box"><span>⌕</span><input id="globalSearch" type="search" placeholder="Buscar una lección o comando…" aria-label="Buscar en LINUX 404"><kbd>CTRL K</kbd></label>
+          <button class="help-button" id="helpBtn" aria-label="Ayuda">?</button>
+        </div>
+      </header>
+
+      <div class="page-wrap" id="pageWrap">
+        <section class="page-view" id="view-home" aria-label="Inicio">
+          <div class="welcome-row"><div><p class="eyebrow"><span class="live-dot"></span> TU ESPACIO DE APRENDIZAJE</p><h1>Linux, <em>a tu ritmo.</em></h1><p class="intro">Un paso cada vez. Aprende a usar tu sistema con confianza y entiende lo que haces en cada momento.</p></div><div class="date-chip"><span>ENTORNO DE REFERENCIA</span><b>Linux Mint <i>·</i> Cinnamon</b></div></div>
+          <section class="hero-card">
+            <div class="hero-copy"><div class="hero-tag"><span>01</span> PRIMEROS PASOS</div><h2>Tu sistema.<br><em>Tus reglas.</em></h2><p>Empieza por conocer el escritorio, los archivos y las herramientas que ya tienes a mano.</p><button class="button-primary" data-action="start">EMPEZAR A APRENDER <span>↗</span></button><div class="hero-note"><span class="note-icon">⌁</span> Lecciones claras · Práctica segura · Sin prisas</div></div>
+            <div class="hero-art" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="mint-window"><div class="window-top"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span><small>TERMINAL — LINUX MINT</small></div><div class="terminal-lines"><p><i>ivan@mint</i><b>:</b><u>~</u><strong>$</strong> <span>ls</span></p><p class="terminal-muted">Documentos&nbsp; Descargas&nbsp; Imágenes</p><p><i>ivan@mint</i><b>:</b><u>~</u><strong>$</strong> <span class="cursor">▌</span></p></div><div class="window-footer"><span>SIMULACIÓN EDUCATIVA</span><b>● SISTEMA LISTO</b></div></div><div class="float-card float-top"><span>⌘</span><div><b>Terminal</b><small>Un comando a la vez</small></div></div><div class="float-card float-bottom"><span class="shield">✦</span><div><b>Práctica segura</b><small>Nada se ejecuta en tu equipo</small></div></div><div class="art-orbit"></div></div>
+          </section>
+          <div class="section-heading"><div><p class="eyebrow">CONTINÚA CUANDO QUIERAS</p><h2>Tu recorrido</h2></div><button class="text-link" data-view="route">VER TODA LA RUTA <span>→</span></button></div>
+          <section class="quick-grid">
+            <button class="quick-card" data-view="route"><span class="quick-icon gold">◈</span><span class="quick-index">01 / APRENDIZAJE</span><b>Ruta guiada</b><small>Desde tu primer día hasta los conceptos esenciales.</small><span class="card-arrow">↗</span></button>
+            <button class="quick-card" data-view="lab"><span class="quick-icon blue">⌘</span><span class="quick-index">02 / PRÁCTICA</span><b>Laboratorio</b><small>Ensaya comandos en un entorno simulado y seguro.</small><span class="card-arrow">↗</span></button>
+            <button class="quick-card" data-view="library"><span class="quick-icon sage">▤</span><span class="quick-index">03 / CONSULTA</span><b>Biblioteca</b><small>Encuentra comandos, ideas y soluciones habituales.</small><span class="card-arrow">↗</span></button>
+          </section>
+          <section class="content-ribbon" aria-label="Recursos disponibles">
+            <div class="ribbon-intro"><p class="eyebrow">UN RECORRIDO MÁS COMPLETO</p><h2>Aprende haciendo.</h2><p>Lecciones, conceptos para consultar y práctica segura para avanzar a tu ritmo.</p></div>
+            <div class="ribbon-stats"><div><b id="homeLessonCount">86</b><span>LECCIONES</span></div><div><b id="homeQuizCount">24</b><span>PREGUNTAS</span></div><div><b id="homeCommandCount">42</b><span>COMANDOS</span></div><div><b id="homeGlossaryCount">24</b><span>CONCEPTOS</span></div></div>
+            <button class="ribbon-link" data-view="library">EXPLORAR LA BIBLIOTECA <span>↗</span></button>
+          </section>
+          <section class="bottom-grid"><div class="panel next-panel"><div class="panel-title"><span>EL SIGUIENTE PASO</span><span class="panel-count" id="nextLessonCount">LECCIÓN 01</span></div><div class="next-content"><div class="lesson-badge" id="nextLessonBadge">01</div><div><h3 id="nextLessonTitle">Qué es Linux y qué significa una distribución</h3><p id="nextLessonSummary">Entiende qué hay detrás de Linux y por qué existen distintas distribuciones.</p><div class="lesson-meta"><span id="nextLessonTime">◷ 5 MIN</span><span id="nextLessonLevel">◇ NIVEL INICIAL</span></div></div><button class="round-arrow" data-action="lesson" aria-label="Abrir siguiente lección">↗</button></div></div><div class="panel safety-panel"><div class="safety-mark">✦</div><div><div class="panel-title">APRENDIZAJE SEGURO</div><h3>Primero entender.<br>Después, decidir.</h3><p>El laboratorio es una simulación. Ningún comando se ejecuta en tu ordenador.</p></div></div></section>
+          <footer class="page-footer"><span>LINUX 404 <i>·</i> APRENDE, EXPLORA, ENTIENDE</span><span>HECHO PARA APRENDER CON CALMA</span></footer>
+        </section>
+        <section class="page-view hidden" id="view-route"></section>
+        <section class="page-view hidden" id="view-lesson"></section>
+        <section class="page-view hidden" id="view-lab"></section>
+        <section class="page-view hidden" id="view-library"></section>
+        <section class="page-view hidden" id="view-troubleshoot"></section>
+        <section class="page-view hidden" id="view-issue"></section>
+        <section class="page-view hidden" id="view-distributions"></section>
+        <section class="page-view hidden" id="view-platforms"></section>
+        <section class="page-view hidden" id="view-challenges"></section>
+        <section class="page-view hidden" id="view-progress"></section>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop hidden" id="modalBackdrop"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Cerrar">×</button><p class="eyebrow" id="modalEyebrow">LINUX 404</p><h2 id="modalTitle">Aprende Linux con confianza.</h2><div id="modalBody"></div><button class="button-primary modal-action" id="modalAction">ENTENDIDO <span>↗</span></button></section></div>
+  <script src="content-library.js" defer></script>
+  <script src="course-content.js" defer></script>
+  <script src="lab-engine.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
